@@ -1,5 +1,7 @@
 {
   "require": {
+    "illuminate/database": "^8.54",
+    "illuminate/events": "^8.54",
     "vlucas/phpdotenv": "^5.3",
     "jenssegers/blade": "^1.4"
   },
@@ -7,7 +9,10 @@
     "psr-4": {
       "App\\": "app/",
       "Core\\": "core/"
-    }
+    },
+    "classmap": [
+      "app/Model"
+    ]
   }
 
 }
